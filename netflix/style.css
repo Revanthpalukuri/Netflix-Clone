@@ -363,12 +363,12 @@ body
   }}
   .email__label:nth-child(even)
   {
-      left:23%;
+      left:26.5%;
   }
   .email__input:focus + .email__label:nth-child(even)
 {
     top:0;
-    left: 23%;
+    left: 26.5%;
     font-size: 13px;
 }
   footer {
