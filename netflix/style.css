@@ -107,7 +107,7 @@ body
     position: absolute;
    color: rgb(153, 149, 149);
    top: 25%;
-   left:2%;
+   left: 50px;
    transition:0.5s;
 }
 .email__form__container
@@ -122,12 +122,13 @@ body
 .form__container
 {
     height: 50px;
-    width: 500px;
+    width: 400px;
     background-color: white;
 }
 .email__input:focus + .email__label
 {
-    top:0;
+    top:0px;
+    left: 1.5%;
     font-size: 13px;
 }
 .email__input:not(:placeholder-shown).email__input:not(:focus) +.email__label
@@ -148,61 +149,6 @@ body
     background-color: red;
     border: 1px solid transparent;
 }
-/*
-.feature__title
-{
-    padding-top: 100px;
-    font-weight: 600;
-    font-size: 40px;
-    padding-left: 120px;
-}
-.feature__subtitle
-{
-    padding-left: 120px;
-    font-size: 25px;
-    width: 35%;
-}
-.feature__image__container
-{
-    position:relative;
-}
-.feature__image
-{
-    width: 100%;
-}
-.feature__background__video__content
-{
-    position: absolute;
-    width: 50%;
-    top: 20.9%;
-    left:11.8%;
-    z-index: -10;
-}
-.feature__background__video
-{
-    background-color: black;
-    width: 150%;
-}
-.feature
-{
-    padding-bottom: 300px;
-    border-top: 13px solid #222;
-    border-bottom: 8px solid #222;
-}
-.feature__image__card
-{
-    position: absolute;
-    top: 110%;
-    left: 50%;
-}
-.feature__card
-{
-    position: relative;
-}
-.feature:nth-child(even)
-{
-    flex-direction: row-reverse;
-}*/
 .feature {
     border-top: 8px solid #222;
     padding: 2rem 1rem;
@@ -419,6 +365,12 @@ body
   {
       left:23%;
   }
+  .email__input:focus + .email__label:nth-child(even)
+{
+    top:0;
+    left: 23%;
+    font-size: 13px;
+}
   footer {
     border-top: 8px solid #333;
     padding: 2rem 1rem;
